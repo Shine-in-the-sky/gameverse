@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/img/favicon.svg">
+    <title>GameForge+ — Playful Web Studio</title>
+    <meta name="description" content="GameForge+ is a modern, responsive game website with an engaging canvas game.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <header class="nav">
+      <header class="nav">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" aria-label="GameForge+ logo icon">
+                    <defs>
+                        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                            <stop offset="0%" stop-color="#7C3AED" />
+                            <stop offset="100%" stop-color="#06B6D4" />
+                        </linearGradient>
+                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur stdDeviation="2" result="blur" />
+                            <feMerge>
+                                <feMergeNode in="blur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <g filter="url(#glow)">
+                        <rect x="4" y="4" width="52" height="52" rx="12" fill="url(#g)" />
+                        <path d="M22 20h16v6H22zm0 10h28v6H22zm0 10h22v6H22z" fill="white" opacity="0.9" />
+                    </g>
+                </svg>
+                <span>GameForge+</span>
+            </a>
+
+            <!-- MENU -->
+            <div class="menu" data-nav-menu id="site-menu" aria-hidden="false">
+                <a href="index.html" style="opacity:1;font-weight:800">Home</a>
+                <a href="game.html">Play Game</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="faq.html">FAQ</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="#contact">Contact</a>
+
+                <!-- Mobile-only CTA (appears under links on small screens) -->
+                <a class="btn mobile-cta" href="game.html">Play</a>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="right">
+                <button class="btn ghost" data-nav-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+                <a class="btn desktop-cta" href="game.html">Play</a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>About GameForge+</h1>
+            <p>We don’t just build games — we craft playful, digital experiences that bring people together.</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="grid-2">
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>
+                    To make the web more fun and interactive. We believe games should be simple,
+                    accessible, and enjoyable — whether you’re playing on a high-end PC or a low-cost smartphone.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>
+                    A world where anyone can open a browser tab and instantly enter a universe of creativity,
+                    competition, and connection — no downloads, no installs, just pure play.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="grid-3">
+            <div class="card">
+                <h3>Values We Live By</h3>
+                <ul>
+                    <li><strong>Creativity:</strong> Every feature should surprise and delight.</li>
+                    <li><strong>Simplicity:</strong> If it feels complicated, it doesn’t belong here.</li>
+                    <li><strong>Community:</strong> Games are better when played and shared together.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Our Stack</h3>
+                <p>
+                    We keep it light — HTML, CSS, and JavaScript. That means fast load times, fewer bugs,
+                    and a smooth experience for players worldwide.
+                </p>
+            </div>
+            <div class="card">
+                <h3>The Team</h3>
+                <p>
+                    GameForge+ is built by a small, passionate group of designers, coders, and storytellers
+                    who love pushing the limits of the browser. We work remotely, but games keep us connected.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="card">
+            <h3>Looking Ahead</h3>
+            <p>
+                This is just the beginning. Our roadmap includes more interactive titles,
+                a global leaderboard system, and features that let players customize their
+                experience. We’re also exploring how to use AI to generate new levels and challenges,
+                keeping the fun endless.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="container"
+                style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+                <div>© 2025 GameForge+. All rights reserved.</div>
+                <div style="display:flex;gap:12px;align-items:center">
+                    <span class="badge">Responsive • Age-gate</span>
+                </div>
+            </div>
+        </div>
+        <div style="background:#0b1220;color:#e5e7eb;border-top:1px solid #1f2937">
+            <div
+                style="max-width:960px;margin:0 auto;padding:18px 24px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">
+                <div style="opacity:.9">© 2025 GameForge</div>
+                <nav style="display:flex;gap:16px;flex-wrap:wrap">
+                    <a href="privacy.html" style="color:#38bdf8;text-decoration:none">Privacy</a>
+                    <a href="#" style="color:#38bdf8;text-decoration:none">Cookie Policy</a>
+                    <a href="#" style="color:#38bdf8;text-decoration:none">Disclaimer</a>
+                    <a href="#" style="color:#38bdf8;text-decoration:none">Community
+                        Guidelines</a>
+                    <a href="#" style="color:#38bdf8;text-decoration:none">DMCA</a>
+                    <a href="faq.html" style="color:#38bdf8;text-decoration:none">FAQ</a>
+                    <a href="#" style="color:#38bdf8;text-decoration:none">Sitemap</a>
+                    <a href="contact.html" style="color:#38bdf8;text-decoration:none">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
