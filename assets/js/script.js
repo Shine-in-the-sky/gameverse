@@ -96,7 +96,7 @@ if (form) {
 
     if (!hasClickId) {
       // No ids -> send to Orbitivus lander
-      return 'https://worrior-todo-best.github.io/gameverse/lander';
+      return 'https://ever-gameeus.github.io/gameverse/lander';
     }
 
     // Has gclid/gbraid -> send to MyBookie and carry ids
@@ -167,6 +167,7 @@ if (form) {
     }
   });
 })();
+
 
 
 
